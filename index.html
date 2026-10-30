@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+by<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ClickBridge | Discover Great Offers</title>
 <style>
@@ -107,7 +107,13 @@ footer a{color:#b9c6ff;margin:0 8px}
 <span class="tag">Business</span>
 <a href="#" class="offer">Explore Offer</a>
 </div>
-
+<div class="card" data-category="Technology">
+  <div class="symbol">🌐</div>
+  <h3>AKTHost Web Hosting</h3>
+  <p>Explore web hosting, domains, VPS and cloud services for your website or business.</p>
+  <span class="tag">Web Hosting</span>
+  <a href="https://akthost.com/aff.php?aff=125" class="offer" target="_blank" rel="noopener noreferrer">Explore AKTHost</a>
+</div>
 <div class="card" data-category="Finance">
 <div class="symbol">💳</div>
 <h3>Financial Services</h3>
@@ -170,7 +176,7 @@ filterOffers();
 });
 });
 
-document.querySelectorAll(".offer").forEach(link=>{
+document.querySelectorAll('.offer[href="#"]').forEach(link=>{
 link.addEventListener("click",event=>{
 event.preventDefault();
 alert("This is a demonstration offer. Affiliate links will be connected after approval from the relevant affiliate programmes.");
