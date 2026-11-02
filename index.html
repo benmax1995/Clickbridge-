@@ -2,211 +2,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-by<meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ClickBridge helps you discover useful digital tools, hosting services and online learning resources.">
 <title>ClickBridge | Discover Great Offers</title>
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f6f8fc;color:#17233d}
-header{background:#101d3a;color:white;padding:20px 6%;display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:25px;font-weight:bold}
-.logo span{color:#8d9bff}
-nav a{color:white;text-decoration:none;margin-left:15px;font-size:14px}
-.hero{background:linear-gradient(130deg,#14264c,#5544a5);color:white;padding:65px 7%;text-align:center}
-.hero h1{font-size:36px;margin-bottom:15px}
-.hero p{font-size:16px;line-height:1.6;margin-bottom:25px}
-.search{width:100%;max-width:520px;padding:16px;border:0;border-radius:10px;font-size:16px}
-main{max-width:1100px;margin:35px auto;padding:0 18px}
-h2{margin-bottom:20px;font-size:25px}
-.categories{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
-.category{border:1px solid #d8deed;background:white;padding:11px 15px;border-radius:25px;cursor:pointer}
-.category.active,.category:hover{background:#293e82;color:white}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
-.card{background:white;border:1px solid #e3e7f0;border-radius:15px;padding:22px;box-shadow:0 5px 18px #15264b0b}
-.card .symbol{font-size:32px;margin-bottom:15px}
-.card h3{margin-bottom:10px}
-.card p{font-size:14px;color:#657087;line-height:1.6;min-height:65px}
-.tag{display:inline-block;background:#edf0ff;color:#354a91;padding:6px 10px;border-radius:15px;font-size:12px;margin:12px 0}
-.offer{display:block;text-align:center;background:#344b9b;color:white;text-decoration:none;padding:12px;border-radius:8px;font-weight:bold}
-.offer:hover{background:#182b68}
-.empty{text-align:center;padding:30px;display:none}
-.info{margin-top:45px;background:white;padding:25px;border-radius:13px;line-height:1.8}
-footer{margin-top:40px;background:#101d3a;color:white;text-align:center;padding:30px 15px;font-size:13px;line-height:2}
-footer a{color:#b9c6ff;margin:0 8px}
-@media(max-width:600px){header{padding:18px;flex-wrap:wrap;gap:12px}nav a{margin-left:8px;font-size:12px}.hero{padding:50px 18px}.hero h1{font-size:30px}}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f8fc;
+  color: #17233d;
+  line-height: 1.6;
+}
+
+header {
+  background: #101d3a;
+  color: white;
+  padding: 20px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #8d9bff;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.hero {
+  background: linear-gradient(130deg,#14264c,#5544a5);
+  color: white;
+  padding: 65px 7%;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.search {
+  width: 100%;
+  max-width: 520px;
+  padding: 16px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 18px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.category {
+  border: 1px solid #d8deed;
+  background: white;
+  padding: 11px 17px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.category.active,
+.category:hover {
+  background: #293e82;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e3e7f0;
+  border-radius: 15px;
+  padding: 24px;
+  box-shadow: 0 5px 18px #15264b0b;
+}
+
+.card .symbol {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #657087;
+  line-height: 1.7;
+  min-height: 75px;
+}
+
+.tag {
+  display: inline-block;
+  background: #edf0ff;
+  color: #354a91;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin: 14px 0;
+}
+
+.offer {
+  display: block;
+  text-align: center;
+  background: #344b9b;
+  color: white;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.offer:hover {
+  background: #182b68;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px;
+  display: none;
+}
+
+.info {
+  margin-top: 35px;
+  background: white;
+  padding: 25px;
+  border-radius: 13px;
+  line-height: 1.8;
+}
+
+.info a {
+  color: #344b9b;
+}
+
+footer {
+  margin-top: 40px;
+  background: #101d3a;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 13px;
+  line-height: 2;
+}
+
+footer a {
+  color: #b9c6ff;
+  margin: 0 8px;
+}
+
+@media(max-width:600px) {
+  header {
+    padding: 18px;
+  }
+  nav a {
+    margin-left: 8px;
+    font-size: 12px;
+  }
+  .hero {
+    padding: 50px 18px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">Click<span>Bridge</span></div>
-<nav>
-<a href="#offers">Offers</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+  <div class="logo">Click<span>Bridge</span></div>
+  <nav>
+    <a href="#offers">Offers</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-<h1>Discover Great Offers Online</h1>
-<p>Explore useful digital tools, learning platforms, technology and services all in one place.</p>
-<input class="search" id="search" type="search" placeholder="Search for offers, tools or services...">
+  <h1>Discover Great Offers Online</h1>
+  <p>
+    Discover digital tools, web hosting services
+    and learning resources to help you grow.
+  </p>
+  <input
+    class="search"
+    id="search"
+    type="search"
+    placeholder="Search for offers, tools or services..."
+  >
 </section>
 
 <main id="offers">
+
 <h2>Explore Categories</h2>
+
 <div class="categories">
-<button class="category active" data-category="All">All Offers</button>
-<button class="category" data-category="Digital Tools">Digital Tools</button>
-<button class="category" data-category="Learning">Online Learning</button>
-<button class="category" data-category="Shopping">Shopping</button>
-<button class="category" data-category="Finance">Finance</button>
-<button class="category" data-category="Business">Business</button>
-<button class="category" data-category="Technology">Technology</button>
+  <button class="category active" data-category="All">All Offers</button>
+  <button class="category" data-category="Digital Tools">Digital Tools</button>
+  <button class="category" data-category="Learning">Online Learning</button>
+  <button class="category" data-category="Technology">Technology</button>
 </div>
 
 <h2>Featured Offers</h2>
+
 <div class="grid" id="offerGrid">
 
-<div class="card" data-category="Digital Tools">
-<div class="symbol">🎨</div>
-<h3>Canva</h3>
-<p>Explore tools for graphic design, presentations and social media content.</p>
-<span class="tag">Digital Tools</span>
-<a href="#" class="offer">Explore Offer</a>
-</div>
+  <div class="card" data-category="Technology">
+    <div class="symbol">💻</div>
+    <h3>AKTHost Web Hosting</h3>
+    <p>
+      Explore domain registration, web hosting,
+      VPS and other services for your website
+      or online business.
+    </p>
+    <span class="tag">Affiliate Offer</span>
+    <a
+      href="https://akthost.com/aff.php?aff=125"
+      class="offer"
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+    >Explore AKTHost</a>
+  </div>
 
-<div class="card" data-category="Learning">
-<div class="symbol">📚</div>
-<h3>freeCodeCamp</h3>
-<p>Learn programming, web development and software engineering with free interactive lessons.</p>
-<span class="tag">Free Technology Learning</span>
-<a href="https://www.freecodecamp.org/" class="offer" target="_blank" rel="noopener noreferrer">Start Learning</a>
-</div>
+  <div class="card" data-category="Digital Tools">
+    <div class="symbol">🚀</div>
+    <h3>Systeme.io</h3>
+    <p>
+      Build websites, sales funnels, email
+      campaigns and online courses using
+      an online business platform.
+    </p>
+    <span class="tag">Affiliate Offer</span>
+    <a
+      href="https://systeme.io/?sa=sa022554519341756376531d8b5cbbe1bdb9ccc6d3"
+      class="offer"
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+    >Explore Systeme.io</a>
+  </div>
 
-<div class="card" data-category="Technology">
-<div class="symbol">💻</div>
-<h3>AKTHost Web Hosting</h3>
-<p>Get reliable web hosting, domain services and VPS solutions for your website.</p>
-<span class="tag">Web Hosting</span>
-<a href="https://akthost.com/aff.php?aff=125" class="offer" target="_blank" rel="noopener noreferrer">Explore AKTHost</a>
-</div>
-
-<div class="card" data-category="Technology">
-  <div class="symbol">🚀</div>
-  <h3>Systeme.io – Online Business Tools</h3>
-  <p>Build websites, sales funnels, email campaigns and online courses with one platform.</p>
-  <span class="tag">Digital Tools</span>
-  <a href="https://systeme.io/?sa=sa022554519341756376531d8b5cbbe1bdb9ccc6d3" class="offer" target="_blank" rel="noopener noreferrer">Explore Systeme.io</a>
-</div>
-
-
-<div class="card" data-category="Business">
-  <div class="symbol">🚀</div>
-  <h3>Business Tools</h3>
-  <p>Discover useful tools and resources to help you start, manage and grow your online business.</p>
-  <span class="tag">Business</span>
-  <a href="#" class="offer">Explore Offer</a>
-</div>
-
-  
-  
-  
-  
-  
-
-<div class="card" data-category="Shopping">
-<div class="symbol">🛍️</div>
-<h3>Online Shopping</h3>
-<p>Discover online shopping platforms and products.</p>
-<span class="tag">Shopping</span>
-<a href="#" class="offer">Explore Offer</a>
-</div>
-
-<div class="card" data-category="Business">
-<div class="symbol">🚀</div>
-<h3>Business Tools</h3>
-<p>Explore digital resources to help entrepreneurs grow their businesses.</p>
-<span class="tag">Business</span>
-<a href="#" class="offer">Explore Offer</a>
-</div>
-<div class="card" data-category="Technology">
-  <div class="symbol">🌐</div>
-  <h3>AKTHost Web Hosting</h3>
-  <p>Explore web hosting, domains, VPS and cloud services for your website or business.</p>
-  <span class="tag">Web Hosting</span>
-  <a href="https://akthost.com/aff.php?aff=125" class="offer" target="_blank" rel="noopener noreferrer">Explore AKTHost</a>
-</div>
-<div class="card" data-category="Finance">
-<div class="symbol">💳</div>
-<h3>Financial Services</h3>
-<p>Discover financial service providers and useful money management resources.</p>
-<span class="tag">Finance</span>
-<a href="#" class="offer">Explore Offer</a>
-</div>
+  <div class="card" data-category="Learning">
+    <div class="symbol">📚</div>
+    <h3>freeCodeCamp</h3>
+    <p>
+      Learn programming, web development
+      and software engineering through
+      free interactive lessons.
+    </p>
+    <span class="tag">Free Learning Resource</span>
+    <a
+      href="https://www.freecodecamp.org/"
+      class="offer"
+      target="_blank"
+      rel="noopener noreferrer"
+    >Start Learning</a>
+  </div>
 
 </div>
-<div class="empty" id="empty">No matching offers found. Try another search.</div>
+
+<div class="empty" id="empty">
+  No matching offers found. Try another search.
+</div>
 
 <div class="info" id="about">
-<h2>About ClickBridge</h2>
-<p>ClickBridge helps people discover useful products, digital tools, online services and learning opportunities. Our goal is to connect visitors with resources that can make their lives and businesses better.</p>
+  <h2>About ClickBridge</h2>
+  <p>
+    ClickBridge helps people discover useful
+    digital products, online services,
+    technology and learning opportunities.
+    Our goal is to connect visitors with
+    resources that can help them grow.
+  </p>
 </div>
 
 <div class="info">
-<h2>Affiliate Disclosure</h2>
-<p>ClickBridge may earn a commission when you click our affiliate links and make a qualifying purchase or signup. This comes at no additional cost to you. We only aim to share useful products and services with our visitors.</p>
+  <h2>Affiliate Disclosure</h2>
+  <p>
+    Some links on ClickBridge are affiliate links.
+    We may earn a commission when visitors
+    make qualifying purchases or sign up
+    through these links, at no additional
+    cost to them.
+  </p>
 </div>
 
 <div class="info" id="contact">
-<h2>Contact Us</h2>
-<p>Interested in partnering with ClickBridge? Contact us at: <strong><a href="mailto:benjaminmaxwell7@gmail.com">benjaminmaxwell7@gmail.com</a></strong></p>
+  <h2>Contact Us</h2>
+  <p>
+    Interested in partnering with ClickBridge?
+    Contact us at:
+  </p>
+  <p>
+    <strong>
+      <a href="mailto:benjaminmaxwell7@gmail.com">
+        benjaminmaxwell7@gmail.com
+      </a>
+    </strong>
+  </p>
 </div>
+
 </main>
 
 <footer>
-<p>© 2026 ClickBridge. All rights reserved.</p>
-<p><a href="#about">About</a> | <a href="#offers">Offers</a> | <a href="#contact">Contact</a></p>
-<p>Discover • Compare • Explore</p>
+  <p>© 2026 ClickBridge. All rights reserved.</p>
+  <p>
+    <a href="#about">About</a> |
+    <a href="#offers">Offers</a> |
+    <a href="#contact">Contact</a>
+  </p>
+  <p>Discover • Compare • Explore</p>
 </footer>
 
 <script>
-const search=document.getElementById("search");
-const cards=[...document.querySelectorAll(".card")];
-const buttons=[...document.querySelectorAll(".category")];
-let selected="All";
+const search = document.getElementById("search");
+const cards = [...document.querySelectorAll(".card")];
+const buttons = [...document.querySelectorAll(".category")];
 
-function filterOffers(){
-const term=search.value.toLowerCase();
-let count=0;
-cards.forEach(card=>{
-const matchesCategory=selected==="All"||card.dataset.category===selected;
-const matchesSearch=card.innerText.toLowerCase().includes(term);
-const visible=matchesCategory&&matchesSearch;
-card.style.display=visible?"block":"none";
-if(visible)count++;
-});
-document.getElementById("empty").style.display=count?"none":"block";
+let selected = "All";
+
+function filterOffers() {
+  const term = search.value.toLowerCase();
+  let count = 0;
+
+  cards.forEach(card => {
+    const matchesCategory =
+      selected === "All" ||
+      card.dataset.category === selected;
+
+    const matchesSearch =
+      card.innerText.toLowerCase().includes(term);
+
+    const visible = matchesCategory && matchesSearch;
+
+    card.style.display = visible ? "block" : "none";
+
+    if (visible) count++;
+  });
+
+  document.getElementById("empty").style.display =
+    count ? "none" : "block";
 }
 
-search.addEventListener("input",filterOffers);
-buttons.forEach(button=>{
-button.addEventListener("click",()=>{
-buttons.forEach(b=>b.classList.remove("active"));
-button.classList.add("active");
-selected=button.dataset.category;
-filterOffers();
-});
-});
+search.addEventListener("input", filterOffers);
 
-document.querySelectorAll('.offer[href="#"]').forEach(link=>{
-link.addEventListener("click",event=>{
-event.preventDefault();
-alert("This is a demonstration offer. Affiliate links will be connected after approval from the relevant affiliate programmes.");
-});
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    buttons.forEach(b => b.classList.remove("active"));
+
+    button.classList.add("active");
+
+    selected = button.dataset.category;
+
+    filterOffers();
+  });
 });
 </script>
-<footer style="background:#101d3a;color:white;text-align:center;padding:20px;margin-top:30px;font-size:13px;">
-<p>Affiliate Disclosure: ClickBridge may earn a commission when you purchase or sign up through some of our links. This comes at no extra cost to you.</p>
-</footer>
+
+</body>
 </html>
