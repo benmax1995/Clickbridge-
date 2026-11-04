@@ -53,7 +53,172 @@ footer{background:#101d3a;color:white;text-align:center;padding:30px 15px;font-s
 footer a{color:#c3ceff;margin:0 8px}
 .empty{display:none;padding:25px;text-align:center}
 @media(max-width:600px){header{padding:17px}nav{gap:10px}.hero h1{font-size:29px}.hero{padding:48px 17px}}
-</style>
+/* CLICKBRIDGE DESIGN UPGRADE */
+body {
+  background: #f3f6ff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+header {
+  padding: 22px 6%;
+  box-shadow: 0 8px 30px rgba(5,15,45,.16);
+}
+
+.logo {
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+nav a {
+  margin: 0;
+  padding: 9px 12px;
+  border-radius: 999px;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 10% 15%, rgba(67,224,208,.25), transparent 30%),
+    linear-gradient(135deg,#0b1734,#243c79,#5845a6);
+  padding: 85px 7%;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0 auto 18px;
+  font-size: clamp(34px,5vw,54px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  color: #e5eaff;
+}
+
+.search {
+  max-width: 620px;
+  border-radius: 16px;
+  padding: 19px 20px;
+  box-shadow: 0 12px 35px rgba(0,0,0,.18);
+}
+
+main {
+  max-width: 1160px;
+  margin: 55px auto;
+  padding: 0 22px;
+}
+
+h2 {
+  font-size: 28px;
+  letter-spacing: -.6px;
+}
+
+.categories {
+  gap: 12px;
+}
+
+.category {
+  border-radius: 999px;
+  padding: 12px 18px;
+}
+
+.category.active,
+.category:hover {
+  background: #283e82;
+}
+
+.grid {
+  gap: 22px;
+}
+
+.card {
+  border: 1px solid #e5e9f4;
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 12px 35px rgba(24,39,75,.07);
+  transition: .2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 42px rgba(24,39,75,.13);
+}
+
+.card .symbol {
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  background: #eef1ff;
+  border-radius: 18px;
+  font-size: 32px;
+}
+
+.card h3 {
+  font-size: 21px;
+}
+
+.offer {
+  border-radius: 12px;
+  padding: 15px;
+  background: linear-gradient(135deg,#334a9b,#6551bd);
+  box-shadow: 0 8px 18px rgba(52,75,155,.18);
+}
+
+.info {
+  border: 1px solid #e6eaf4;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(24,39,75,.05);
+}
+
+footer {
+  padding: 42px 18px;
+}
+
+@media(max-width:600px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 66px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  main {
+    margin: 38px auto;
+    padding: 0 16px;
+  }
+
+  .card {
+    padding: 23px;
+  }
+
+  .info {
+    padding: 22px;
+  }
+}</style>
 </head>
 
 <body>
