@@ -3,406 +3,222 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="ClickBridge helps you discover useful digital tools, hosting services and online learning resources.">
-<title>ClickBridge | Discover Great Offers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ClickBridge helps you discover legitimate online opportunities, digital tools, AI resources, freelancing guides and technology education.">
+<meta name="keywords" content="online opportunities, freelancing, AI tools, digital skills, online business">
+<meta name="author" content="ClickBridge">
+<meta name="robots" content="index, follow">
+<title>ClickBridge | Discover. Learn. Grow.</title>
 
 <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f6f8fc;
-  color: #17233d;
-  line-height: 1.6;
-}
-
-header {
-  background: #101d3a;
-  color: white;
-  padding: 20px 6%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.logo span {
-  color: #8d9bff;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 15px;
-  font-size: 14px;
-}
-
-.hero {
-  background: linear-gradient(130deg,#14264c,#5544a5);
-  color: white;
-  padding: 65px 7%;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-
-.search {
-  width: 100%;
-  max-width: 520px;
-  padding: 16px;
-  border: 0;
-  border-radius: 10px;
-  font-size: 16px;
-}
-
-main {
-  max-width: 1100px;
-  margin: 35px auto;
-  padding: 0 18px;
-}
-
-h2 {
-  margin-bottom: 20px;
-  font-size: 25px;
-}
-
-.categories {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  margin-bottom: 35px;
-}
-
-.category {
-  border: 1px solid #d8deed;
-  background: white;
-  padding: 11px 17px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-.category.active,
-.category:hover {
-  background: #293e82;
-  color: white;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
-  gap: 18px;
-}
-
-.card {
-  background: white;
-  border: 1px solid #e3e7f0;
-  border-radius: 15px;
-  padding: 24px;
-  box-shadow: 0 5px 18px #15264b0b;
-}
-
-.card .symbol {
-  font-size: 34px;
-  margin-bottom: 15px;
-}
-
-.card h3 {
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 15px;
-  color: #657087;
-  line-height: 1.7;
-  min-height: 75px;
-}
-
-.tag {
-  display: inline-block;
-  background: #edf0ff;
-  color: #354a91;
-  padding: 6px 12px;
-  border-radius: 15px;
-  font-size: 12px;
-  margin: 14px 0;
-}
-
-.offer {
-  display: block;
-  text-align: center;
-  background: #344b9b;
-  color: white;
-  text-decoration: none;
-  padding: 14px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.offer:hover {
-  background: #182b68;
-}
-
-.empty {
-  text-align: center;
-  padding: 30px;
-  display: none;
-}
-
-.info {
-  margin-top: 35px;
-  background: white;
-  padding: 25px;
-  border-radius: 13px;
-  line-height: 1.8;
-}
-
-.info a {
-  color: #344b9b;
-}
-
-footer {
-  margin-top: 40px;
-  background: #101d3a;
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-  font-size: 13px;
-  line-height: 2;
-}
-
-footer a {
-  color: #b9c6ff;
-  margin: 0 8px;
-}
-
-@media(max-width:600px) {
-  header {
-    padding: 18px;
-  }
-  nav a {
-    margin-left: 8px;
-    font-size: 12px;
-  }
-  .hero {
-    padding: 50px 18px;
-  }
-  .hero h1 {
-    font-size: 30px;
-  }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f5f7fc;color:#17233d;line-height:1.7}
+header{background:#101d3a;color:white;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-size:27px;font-weight:bold}
+.logo span{color:#8d9bff}
+nav{display:flex;gap:17px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#aebaff}
+.hero{background:linear-gradient(130deg,#14264c,#5544a5);color:white;text-align:center;padding:65px 18px}
+.hero h1{font-size:38px;margin-bottom:12px}
+.hero p{max-width:650px;margin:0 auto 22px}
+.search{width:100%;max-width:520px;padding:15px;border:0;border-radius:9px;font-size:16px}
+main{max-width:1100px;margin:35px auto;padding:0 18px}
+section{margin-bottom:45px}
+h2{font-size:25px;margin-bottom:16px}
+.intro{color:#657087;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card,.article,.info{background:white;border:1px solid #e3e7f0;border-radius:14px;padding:23px;box-shadow:0 5px 18px #15264b0b}
+.symbol{font-size:32px;margin-bottom:10px}
+.card h3,.article h3{margin-bottom:9px}
+.card p,.article p{color:#657087;font-size:15px;margin-bottom:12px}
+.tag{display:inline-block;background:#edf0ff;color:#354a91;padding:5px 11px;border-radius:20px;font-size:12px;margin:8px 0}
+.btn{display:inline-block;background:#344b9b;color:white;padding:11px 17px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:8px}
+.btn:hover{background:#182b68}
+.categories{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.category{padding:9px 15px;border:1px solid #d8deed;background:white;border-radius:25px;cursor:pointer}
+.category.active{background:#293e82;color:white}
+.info{margin-bottom:18px}
+.info p{margin-bottom:10px;color:#536078}
+.info a{color:#344b9b}
+.article{margin-bottom:15px}
+footer{background:#101d3a;color:white;text-align:center;padding:30px 15px;font-size:13px}
+footer a{color:#c3ceff;margin:0 8px}
+.empty{display:none;padding:25px;text-align:center}
+@media(max-width:600px){header{padding:17px}nav{gap:10px}.hero h1{font-size:29px}.hero{padding:48px 17px}}
 </style>
 </head>
 
 <body>
-
 <header>
   <div class="logo">Click<span>Bridge</span></div>
   <nav>
-    <a href="#offers">Offers</a>
+    <a href="#home">Home</a>
+    <a href="#offers">Opportunities</a>
+    <a href="#guides">Guides</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Discover Great Offers Online</h1>
-  <p>
-    Discover digital tools, web hosting services
-    and learning resources to help you grow.
-  </p>
-  <input
-    class="search"
-    id="search"
-    type="search"
-    placeholder="Search for offers, tools or services..."
-  >
+<section class="hero" id="home">
+  <h1>Discover. Learn. Grow.</h1>
+  <p>Your bridge to digital opportunities, online learning, useful technology and smarter ways to grow.</p>
+  <input class="search" id="search" type="search" placeholder="Search opportunities, guides and tools...">
 </section>
 
-<main id="offers">
+<main>
 
-<h2>Explore Categories</h2>
+<section>
+<h2>Welcome to ClickBridge</h2>
+<p class="intro">We help people discover useful digital resources, develop valuable skills and explore legitimate opportunities in the online world.</p>
+</section>
+
+<section id="offers">
+<h2>Explore Opportunities</h2>
+<p class="intro">Explore platforms and resources that can help you build your digital future.</p>
 
 <div class="categories">
-  <button class="category active" data-category="All">All Offers</button>
-  <button class="category" data-category="Digital Tools">Digital Tools</button>
-  <button class="category" data-category="Learning">Online Learning</button>
-  <button class="category" data-category="Technology">Technology</button>
+<button class="category active" data-category="All">All</button>
+<button class="category" data-category="Technology">Technology</button>
+<button class="category" data-category="Business">Business Tools</button>
+<button class="category" data-category="Learning">Learning</button>
 </div>
-
-<h2>Featured Offers</h2>
 
 <div class="grid" id="offerGrid">
 
-  <div class="card" data-category="Technology">
-    <div class="symbol">💻</div>
-    <h3>AKTHost Web Hosting</h3>
-    <p>
-      Explore domain registration, web hosting,
-      VPS and other services for your website
-      or online business.
-    </p>
-    <span class="tag">Affiliate Offer</span>
-    <a
-      href="https://akthost.com/aff.php?aff=125"
-      class="offer"
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-    >Explore AKTHost</a>
-  </div>
-
-  <div class="card" data-category="Digital Tools">
-    <div class="symbol">🚀</div>
-    <h3>Systeme.io</h3>
-    <p>
-      Build websites, sales funnels, email
-      campaigns and online courses using
-      an online business platform.
-    </p>
-    <span class="tag">Affiliate Offer</span>
-    <a
-      href="https://systeme.io/?sa=sa022554519341756376531d8b5cbbe1bdb9ccc6d3"
-      class="offer"
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-    >Explore Systeme.io</a>
-  </div>
-
-  <div class="card" data-category="Learning">
-    <div class="symbol">📚</div>
-    <h3>freeCodeCamp</h3>
-    <p>
-      Learn programming, web development
-      and software engineering through
-      free interactive lessons.
-    </p>
-    <span class="tag">Free Learning Resource</span>
-    <a
-      href="https://www.freecodecamp.org/"
-      class="offer"
-      target="_blank"
-      rel="noopener noreferrer"
-    >Start Learning</a>
-  </div>
-
+<div class="card" data-category="Technology">
+<div class="symbol">💻</div>
+<h3>AKTHost Web Hosting</h3>
+<p>Explore web hosting, domain registration and VPS services for websites and online businesses.</p>
+<span class="tag">Affiliate offer</span><br>
+<a class="btn" href="https://akthost.com/aff.php?aff=125" target="_blank" rel="sponsored noopener noreferrer">Explore AKTHost</a>
 </div>
 
-<div class="empty" id="empty">
-  No matching offers found. Try another search.
+<div class="card" data-category="Business">
+<div class="symbol">🚀</div>
+<h3>Systeme.io</h3>
+<p>Explore tools for building websites, sales funnels, email campaigns and online courses.</p>
+<span class="tag">Affiliate offer</span><br>
+<a class="btn" href="https://systeme.io/?sa=sa022554519341756376531d8b5cbbe1bdb9ccc6d3" target="_blank" rel="sponsored noopener noreferrer">Explore Systeme.io</a>
 </div>
 
-<div class="info" id="about">
-  <h2>About ClickBridge</h2>
-  <p>
-    ClickBridge helps people discover useful
-    digital products, online services,
-    technology and learning opportunities.
-    Our goal is to connect visitors with
-    resources that can help them grow.
-  </p>
+<div class="card" data-category="Learning">
+<div class="symbol">📚</div>
+<h3>freeCodeCamp</h3>
+<p>Learn programming, web development and software engineering through free interactive lessons.</p>
+<span class="tag">Free learning resource</span><br>
+<a class="btn" href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">Start Learning</a>
 </div>
 
-<div class="info">
-  <h2>Affiliate Disclosure</h2>
-  <p>
-    Some links on ClickBridge are affiliate links.
-    We may earn a commission when visitors
-    make qualifying purchases or sign up
-    through these links, at no additional
-    cost to them.
-  </p>
 </div>
+<div class="empty" id="empty">No matching resources found.</div>
+</section>
 
-<div class="info" id="contact">
-  <h2>Contact Us</h2>
-  <p>
-    Interested in partnering with ClickBridge?
-    Contact us at:
-  </p>
-  <p>
-    <strong>
-      <a href="mailto:benjaminmaxwell7@gmail.com">
-        benjaminmaxwell7@gmail.com
-      </a>
-    </strong>
-  </p>
+<section id="guides">
+<h2>Learn and Grow Online</h2>
+<p class="intro">Practical educational resources for anyone interested in developing digital skills.</p>
+
+<div class="grid">
+<article class="article">
+<div class="symbol">🌍</div>
+<h3>How to Start Freelancing</h3>
+<p>Freelancing allows people to offer services such as writing, graphic design, programming and virtual assistance to clients.</p>
+<p>Start by choosing one skill, practising it, building sample projects and creating a professional portfolio. You can then explore platforms such as Fiverr and Upwork.</p>
+</article>
+
+<article class="article">
+<div class="symbol">🤖</div>
+<h3>How AI Tools Can Improve Your Productivity</h3>
+<p>Artificial intelligence tools can help with research, brainstorming, writing, design and learning.</p>
+<p>Use AI to support your work, verify important information and develop your own skills rather than relying on automatically generated material without review.</p>
+</article>
+
+<article class="article">
+<div class="symbol">📱</div>
+<h3>Building Digital Skills With Your Phone</h3>
+<p>You do not always need an expensive computer to begin learning digital skills.</p>
+<p>A smartphone can help you study programming, practise writing, design graphics, manage social media and build a portfolio. Consistent practice matters.</p>
+</article>
+
+<article class="article">
+<div class="symbol">💡</div>
+<h3>Understanding Affiliate Marketing</h3>
+<p>Affiliate marketing involves recommending products or services through tracked referral links.</p>
+<p>When someone completes an eligible purchase or action, the affiliate may receive a commission. Always disclose affiliate relationships and recommend products honestly.</p>
+</article>
 </div>
+</section>
+
+<section id="about" class="info">
+<h2>About ClickBridge</h2>
+<p>ClickBridge is an independent digital resource platform created to connect people with useful technology, online learning resources, business tools and opportunities.</p>
+<p>Our mission is to make discovering and understanding digital opportunities easier.</p>
+</section>
+
+<section class="info">
+<h2>Affiliate Disclosure</h2>
+<p>Some links on this website are affiliate links. We may earn a commission when visitors complete qualifying purchases or actions through those links, at no additional cost to them.</p>
+<p>Our recommendations should be evaluated carefully. We do not guarantee income or employment from any platform.</p>
+</section>
+
+<section class="info" id="privacy">
+<h2>Privacy Policy</h2>
+<p>ClickBridge respects visitor privacy. This website does not currently require visitors to create accounts or submit personal information to read its content.</p>
+<p>Third-party websites linked from ClickBridge have their own privacy policies and practices. Please review them before sharing information.</p>
+<p>If advertising or analytics services are introduced, they may use cookies or similar technologies according to their respective policies and applicable consent requirements.</p>
+<p>For privacy questions, contact us using the email below.</p>
+</section>
+
+<section class="info" id="contact">
+<h2>Contact ClickBridge</h2>
+<p>For questions, corrections, feedback or business partnerships, contact:</p>
+<p><a href="mailto:benjaminmaxwell7@gmail.com"><strong>benjaminmaxwell7@gmail.com</strong></a></p>
+</section>
 
 </main>
 
 <footer>
-  <p>© 2026 ClickBridge. All rights reserved.</p>
-  <p>
-    <a href="#about">About</a> |
-    <a href="#offers">Offers</a> |
-    <a href="#contact">Contact</a>
-  </p>
-  <p>Discover • Compare • Explore</p>
+<p>© 2026 ClickBridge. All rights reserved.</p>
+<p>
+<a href="#home">Home</a>
+<a href="#offers">Opportunities</a>
+<a href="#guides">Guides</a>
+<a href="#about">About</a>
+<a href="#privacy">Privacy</a>
+<a href="#contact">Contact</a>
+</p>
+<p>Discover • Learn • Grow</p>
 </footer>
 
 <script>
-const search = document.getElementById("search");
-const cards = [...document.querySelectorAll(".card")];
-const buttons = [...document.querySelectorAll(".category")];
+const search=document.getElementById("search");
+const cards=[...document.querySelectorAll(".card")];
+const buttons=[...document.querySelectorAll(".category")];
+let selected="All";
 
-let selected = "All";
-
-function filterOffers() {
-  const term = search.value.toLowerCase();
-  let count = 0;
-
-  cards.forEach(card => {
-    const matchesCategory =
-      selected === "All" ||
-      card.dataset.category === selected;
-
-    const matchesSearch =
-      card.innerText.toLowerCase().includes(term);
-
-    const visible = matchesCategory && matchesSearch;
-
-    card.style.display = visible ? "block" : "none";
-
-    if (visible) count++;
-  });
-
-  document.getElementById("empty").style.display =
-    count ? "none" : "block";
+function filterOffers(){
+const term=search.value.toLowerCase();
+let count=0;
+cards.forEach(card=>{
+const categoryMatch=selected==="All"||card.dataset.category===selected;
+const searchMatch=card.innerText.toLowerCase().includes(term);
+const show=categoryMatch&&searchMatch;
+card.style.display=show?"block":"none";
+if(show)count++;
+});
+document.getElementById("empty").style.display=count?"none":"block";
 }
 
-search.addEventListener("input", filterOffers);
-
-buttons.forEach(button => {
-  button.addEventListener("click", () => {
-    buttons.forEach(b => b.classList.remove("active"));
-
-    button.classList.add("active");
-
-    selected = button.dataset.category;
-
-    filterOffers();
-  });
+search.addEventListener("input",filterOffers);
+buttons.forEach(button=>{
+button.addEventListener("click",()=>{
+buttons.forEach(b=>b.classList.remove("active"));
+button.classList.add("active");
+selected=button.dataset.category;
+filterOffers();
+});
 });
 </script>
-
 </body>
 </html>
